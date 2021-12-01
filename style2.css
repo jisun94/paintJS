@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Oxygen, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ede8f6;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: start;
+  width: 1000px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgb(50 50 93 / 11%), 0 4px 10px rgb(0 0 0 / 8%);
+}
+
+.canvas {
+  order: 2;
+}
+
+.controls {
+  padding: 70px 30px;
+  background-color: #f7f7fa;
+  border-right: 1px solid rgb(0, 0, 0, 0.05);
+}
+
+.controls h2 {
+  margin-bottom: 7px;
+}
+
+.controls > div {
+  margin-bottom: 10px;
+}
+
+.controls button {
+  all: unset;
+  font-size: 16px;
+  font-weight: 800;
+  color: #8383a0;
+  cursor: pointer;
+  transition: color 200ms ease-in;
+}
+
+.controls button:hover {
+  color: #303030;
+}
+
+.colors-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colors-wrap .color {
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 4px 25px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.colors-wrap .color:hover {
+  transform: scale(1.1);
+}
+
+.colors-wrap .color .img {
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}

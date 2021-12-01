@@ -4,64 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style2.css" />
     <title>paintJS</title>
   </head>
   <body>
-    <canvas id="jsCanvas" class="canvas"></canvas>
-    <div class="controls">
-      <div class="controls-range">
-        <input
-          id="jsRange"
-          type="range"
-          min="0.1"
-          max="5"
-          value="2.5"
-          step="0.1"
-        />
-      </div>
-      <div class="controls-btns">
-        <button id="jsMode">Fill</button>
-        <button id="jsSave">Save</button>
-      </div>
-      <div id="jsColors" class="controls-colors">
-        <div
-          class="controls-color jsColor"
-          style="background-color: #2c2c2c"
-        ></div>
-        <div
-          class="controls-color jsColor"
-          style="background-color: #fff"
-        ></div>
-        <div
-          class="controls-color jsColor"
-          style="background-color: #ff3b30"
-        ></div>
-        <div
-          class="controls-color jsColor"
-          style="background-color: #ff9500"
-        ></div>
-        <div
-          class="controls-color jsColor"
-          style="background-color: #ffcc00"
-        ></div>
-        <div
-          class="controls-color jsColor"
-          style="background-color: #4cd963"
-        ></div>
-        <div
-          class="controls-color jsColor"
-          style="background-color: #5ac8fa"
-        ></div>
-        <div
-          class="controls-color jsColor"
-          style="background-color: #0579ff"
-        ></div>
-        <div
-          class="controls-color jsColor"
-          style="background-color: #5856d6"
-        ></div>
-      </div>
+    <div class="wrapper">
+      <canvas id="jsCanvas" class="canvas"></canvas>
+      <aside class="controls">
+        <div id="jsColors" class="colors">
+          <h2><button>COLOR</button></h2>
+          <div class="colors-wrap">
+            <div
+              id="jsColor"
+              class="color"
+              style="background-color: #0a0a0a"
+            ></div>
+            <div
+              id="jsColor"
+              class="color"
+              style="background-color: #ddd"
+            ></div>
+            <div
+              id="jsColor"
+              class="color"
+              style="background-color: #9ddef4"
+            ></div>
+            <div
+              id="jsColor"
+              class="color"
+              style="background-color: #c2a5f9"
+            ></div>
+            <div
+              id="jsColor"
+              class="color"
+              style="background-color: #b5fac6"
+            ></div>
+            <div
+              id="jsColor"
+              class="color"
+              style="background-color: #fece00"
+            ></div>
+            <div
+              id="jsColor"
+              class="color"
+              style="background-color: #ffb3da"
+            ></div>
+            <div
+              id="jsColor"
+              class="color"
+              style="background-color: #ffffff"
+            ></div>
+            <div
+              id="jsColor"
+              class="color"
+              style="background-color: #2527b8"
+            ></div>
+          </div>
+        </div>
+        <div id="jsStroke" class="stroke">
+          <h2><button>STROKE</button></h2>
+          <input type="range" min="0" max="2" value="1" step="0.1" />
+        </div>
+        <div id="jsMode" class="mode">
+          <h2 id="jsPaint" class="paint"><button>PAINT</button></h2>
+          <h2 id="jsFill" class="fill"><button>FILL</button></h2>
+        </div>
+        <div id="jsSave" class="save">
+          <h2><button>SAVE</button></h2>
+        </div>
+      </aside>
     </div>
     <script src="./app.js"></script>
   </body>
