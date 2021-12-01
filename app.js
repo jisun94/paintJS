@@ -64,6 +64,14 @@ function changeStroke(event) {
   ctx.lineWidth = value;
 }
 
+function saveTheImage() {
+  const image = canvas.toDataURL();
+  const link = document.createElement('a');
+  link.href = image;
+  link.download = 'PaintJS[EXPORT]🎨';
+  link.click();
+}
+
 if (canvas) {
   canvas.addEventListener('mousemove', onMouseMove);
   canvas.addEventListener('mousedown', startPainting);
@@ -86,4 +94,8 @@ if (paint) {
 
 if (stroke) {
   stroke.addEventListener('input', changeStroke);
+}
+
+if (save) {
+  save.addEventListener('click', saveTheImage);
 }
