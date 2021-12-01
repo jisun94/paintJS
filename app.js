@@ -47,7 +47,6 @@ function changeColor(event) {
 function onMouseClick() {
   if (filling === true) {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    // filling = false;
   }
 }
 
