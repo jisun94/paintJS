@@ -76,18 +76,6 @@ if (canvas) {
   canvas.addEventListener('mouseup', stopPainting);
   canvas.addEventListener('mouseleave', stopPainting);
   canvas.addEventListener('click', onMouseClick);
-  canvas.addEventListener(
-    'touchmove',
-    function (e) {
-      var touch = e.touches[0];
-      var mouseEvent = new MouseEvent('mousemove', {
-        clientX: touch.clientX,
-        clientY: touch.clientY,
-      });
-      canvas.dispatchEvent(mouseEvent);
-    },
-    false
-  );
 }
 
 colors.forEach((color) => {
