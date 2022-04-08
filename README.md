@@ -1,4 +1,4 @@
-# paintJS is a painting board made with vanila JS and Canvas
+## paintJS is a painting board made with vanila JS and Canvas
 
 You can choose color, adjust stroke and select the drawing mode. 
 
